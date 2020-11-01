@@ -1,0 +1,269 @@
+body{
+  font-family: Helvetica, Arial, Palatino, sans-serif;
+  background:#efefef;
+  margin:0px;
+}
+
+header{    
+  display:block;
+  width:100%;
+}
+
+.header-sxn{
+  position:relative;
+  top:45px;
+  display:block;
+  overflow:hidden;
+  width:100%;
+  padding:0px;
+  background:#ddd;
+  border-bottom:1px solid #ccc;
+}
+
+#header-img{
+  display:inline-block;
+  float:left;
+  width:100px;
+}
+
+#header-txt{
+  display:inline-block;
+  position:relative;
+  font-family: Monospace,Helvetica, Arial, Palatino, sans-serif;
+  font-size:32px;
+  color:#8b0000;
+}
+
+#nav-bar{
+  display:block;
+  overflow:hidden;
+  position:fixed;
+  top:0px;
+  width:100%;
+  margin:0px;
+  padding:0px;
+  border:1px solid #ccc;
+  background:#0f0f0f;
+  z-index:99;
+}
+
+#nav-bar ul{  
+  float:right;
+  width:100%;
+  list-style-type:none;
+  margin:0px;
+  background:#0f0f0f;
+}
+
+.nav-item{
+  display:inline-block;
+  float:left;
+  margin:0px;
+  padding:10px 0px;
+  background:#0f0f0f;
+}
+
+.nav-item a{    
+  font-weight:400;
+  font-size:16px;
+  margin:0px;
+  padding:10px;
+  text-decoration:none;
+  color:#ddd;
+  border-right:1px solid #ccc;
+}
+
+#nav-bar ul> li a:hover{
+  background:#ddd;
+  color:#000;
+}
+
+#main-div{
+  position:relative;
+  top:100px;
+  text-align:center;
+  width:100%;
+}
+
+h1{
+  color:#8b0000;
+  font-weight:500;
+  font-size:28px;
+}
+
+#form{ 
+  margin:auto;
+  padding:25px 15px;
+}
+
+#subscribe{
+  margin:0px 0px 10px;
+  font-size:18px;
+}
+
+#email{
+  width:350px;
+  line-height:1.5;
+  vertical-align:baseline;
+}
+
+.section{
+  width:75%;
+  margin:auto;
+  margin-top:50px;
+}
+
+.section #video{
+  display:block;
+  margin:auto;
+  border:none;
+  margin-top:30px;
+} 
+
+.sxn-div{
+  display:flex;
+  flex-direction:row;
+  justify-content:start;
+  width:100%;
+  margin-left:20px;
+}
+
+.sxn-div img{
+  max-width:75px;
+}
+
+.sxn-div h2{
+  margin-left:15px;  
+}
+
+.flex-div{
+  display:flex;
+  justify-content:space-around;
+  flex-flow:row wrap;
+  width:100%;
+  margin-left:0px;
+  margin-top:10px;
+}
+
+.flex-div div{
+  width:250px;
+  border:solid #666;
+  margin:0px 20px 20px 0px;
+}
+
+.flex-div div>img{
+  max-width:100%;
+}
+
+.flex-div div img, .flex-div div h3, .flex-div div button{
+  margin:0px;
+}
+
+.price{
+  color:#f00;
+}
+
+form #submit,.flex-div div button{
+  padding:5px 10px;
+  margin-top:5px;
+  background:#006400;
+  border-radius:5px;
+  font-size:16px;
+  font-weight:600;
+  color:#fff;
+  border:1px solid #eee;
+}
+
+#shipping .flex-div div{
+  border:none;
+}
+
+.shipping-div ol{
+  text-align:left;
+  margin-top:10px;  
+}
+
+#ship-para{
+  text-align:justify;
+  margin-left:20px;
+}
+
+#shipping .flex-div img{
+  display:block;
+  margin:auto;
+  width:50px;
+  height:50px;
+}
+
+@media screen and (max-width:600px){
+  
+  .header-sxn{
+    display:block;
+    text-align:center;
+  }
+  
+  .header-sxn #header-img, .header-sxn #header-txt{
+    display:inherit;
+    float:none;
+    margin:auto;
+  }
+  #header-img{ 
+    max-width:50px;
+  }
+
+  #header-txt{
+    font-size:26px;
+    position:static;
+  }
+  
+  #nav-bar ul{
+    display:flex;
+    justify-content:center;
+    width:100%;    
+  }
+  
+  .nav-item:first-child{
+    border-left:1px solid #ccc;
+  }
+  
+  h1{
+  font-size:24px;
+  }
+  
+  #form span label{
+    display:none;
+  }
+  
+  #form span #email, #form span #submit{
+    display:block;
+    margin:10px auto;
+  }
+  
+  form #submit{
+    margin-top:10px;
+  }
+  
+  .section #video{
+    height:150px;
+  }
+  
+  .section #video{
+    width:60%;
+    height:150px;
+  } 
+  
+  #offers .sxn-div,#products .sxn-div{
+    margin-left:35px;
+  }
+}
+
+#footer{
+  position:relative;
+  top:100px;
+  width:100%;
+  text-align:center;
+  background:#0f0f0f;
+  color:#ddd;
+  margin:50px 0px 0px;
+}
+  
